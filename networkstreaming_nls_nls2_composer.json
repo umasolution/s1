@@ -1,0 +1,36 @@
+{
+	"name": "bomgar/nls-tools",
+	"description": "Bomgar NLS Tools",
+	"license": "proprietary",
+	"type": "project",
+	"repositories": [
+		{
+			"packagist": false
+		},
+		{
+			"type": "composer",
+			"url": "https://satis.bomgar.com"
+		}
+	],
+	"require": {
+		"php": ">=8.1",
+		"symfony/console": "^4",
+		"psr/log": "1.0.0",
+		"symfony/process": "^4",
+		"symfony/finder": "^4",
+		"monolog/monolog": "^1.18",
+		"symfony/monolog-bridge": "^4",
+		"symfony/dependency-injection": "^4",
+		"symfony/config": "^4",
+		"symfony/event-dispatcher": "^4",
+		"symfony/filesystem": "^4",
+		"sepia/po-parser": "4.2.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"NLS\\": "src/NLS"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
